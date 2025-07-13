@@ -1,11 +1,13 @@
 'use client'
 import { Link } from '@/src/navigation'
+import myLogo from '@/src/app/my-logo.png' // 1. 导入您的 logo 图片
 import { useTranslations } from 'next-intl'
+import Image from 'next/image' // 2. 推荐使用 Next.js 的 Image 组件
 import { FC } from 'react'
 import GithubIcon from '../../icons/github'
-import LogoIcon from '../../icons/logo'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
+
 interface Props {
   locale: string
 }
@@ -16,10 +18,17 @@ export const Header: FC<Props> = ({ locale }) => {
     <div className='relative z-50 mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
       <Link lang={locale} href='/'>
         <div className='flex flex-row items-center'>
-          <div className='mb-2 h-14 w-14'>
-            <LogoIcon />
+          {/* 3. 使用 Image 组件和导入的图片对象 */}
+          <div className='flex h-14 w-14 items-center justify-center'>
+            <Image
+              src={myLogo}
+              alt='Logo'
+              width={48}
+              height={48}
+              className='rounded-full object-contain'
+            />
           </div>
-          <strong className='mx-2 select-none'>Template</strong>
+          <strong className='mx-2 select-none'>ycxom</strong>
         </div>
       </Link>
       <div className='flex flex-row items-center gap-3'>
@@ -27,8 +36,9 @@ export const Header: FC<Props> = ({ locale }) => {
         <ThemeSwitch />
         <LangSwitcher />
         <a
-          href='https://github.com/yahyaparvar/nextjs-template'
+          href='https://github.com/ycxom/'
           target='_blank'
+          rel='noopener noreferrer'
         >
           <div className='size-8'>
             <GithubIcon />

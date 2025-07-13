@@ -3,17 +3,14 @@
         "FRPS_Server_Title": "FRPS 服务器",
         "frps_server_description": "这是一个内网穿透服务。",
         "Go_to_homepage": "访问主页",
-        "Learn_More": "Frps",
+        "Learn_More": "Frps项目",
         "Approachable": "易于使用",
-        "Versatile": "功能多样",
-        "Performant": "性能卓越",
-        "Add_components_without_sending_additional_client_side_JavaScript_Built_on_the_latest_React_features": "无需发送额外的客户端 JavaScript 即可添加组件。基于最新的 React 功能构建。",
-        "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "自动优化图像、字体和脚本，以改善用户体验和核心 Web 指标。",
-        "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "一个功能丰富、极易采用的模板，可从小规模展示网站扩展到全尺寸应用程序。"
+        "Versatile": "多节点",
+        "Performant": "页面说明",
+        "Add_components_without_sending_additional_client_side_JavaScript_Built_on_the_latest_React_features": "完整运行Frps实例的穿透服务器",
+        "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "基于阿里云，华为云等云服务器穿透服务",
+        "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "该页面基于nextjs项目创建，简易显示界面"
     },
-    "About": "关于",
-    "Support": "支持",
-    "Other": "其他",
     "Theme": "主题",
     "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "这是一个简单的关于页面，仅用于展示如何在不同页面中使用国际化"
 }

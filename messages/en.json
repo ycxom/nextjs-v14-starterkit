@@ -1,19 +1,16 @@
 {
   "Homepage": {
     "FRPS_Server_Title": "FRPS Server",
-    "frps_server_description": "This is a high-speed, stable intranet penetration service.",
-    "Go_to_homepage": "Go to Homepage",
-    "Learn_More": "Learn More",
-    "Approachable": "Approachable",
-    "Versatile": "Versatile",
-    "Performant": "Performant",
-    "Add_components_without_sending_additional_client_side_JavaScript_Built_on_the_latest_React_features": "Add components without sending additional client-side JavaScript. Built on the latest React features.",
-    "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.",
-    "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "A rich, incredibly adoptable template that scales between a small showcase website and a full-size app."
+    "frps_server_description": "This is an intranet penetration service.",
+    "Go_to_homepage": "Visit Homepage",
+    "Learn_More": "Frps Project",
+    "Approachable": "Easy to Use",
+    "Versatile": "Multi-node",
+    "Performant": "Page Description",
+    "Add_components_without_sending_additional_client_side_JavaScript_Built_on_the_latest_React_features": "A penetration server that runs a full Frps instance.",
+    "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "Penetration services based on cloud servers such as Alibaba Cloud and Huawei Cloud.",
+    "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "This page is created based on the next.js project, with a simple display interface."
   },
-  "About": "About",
-  "Support": "Support",
-  "Other": "Other",
   "Theme": "Theme",
-  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page just to show how you can use the internationalization in different pages"
+  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page, just to show how you can use internationalization in different pages."
 }
