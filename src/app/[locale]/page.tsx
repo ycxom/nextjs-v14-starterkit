@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import Button from './components/Button'
+import { TypeAnimation } from 'react-type-animation'
 
 export default function DashboardPage() {
   const t = useTranslations('Homepage')
@@ -18,7 +19,17 @@ export default function DashboardPage() {
         {/* 所有内容都放在一个相对定位的容器中，并设置 z-index 以确保在遮罩层之上 */}
         <div className="relative z-10 flex flex-col items-center justify-center px-4">
           <h1 className='text-center text-5xl font-extrabold leading-tight drop-shadow-lg md:text-7xl'>
-            {t('FRPS_Server_Title')}
+            <TypeAnimation
+              sequence={[
+                t('FRPS_Server_Title'),
+                1000,
+                t('FRPS_Server_Title2'),
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <div className='my-6 max-w-2xl text-center text-xl text-gray-200 drop-shadow-md md:text-2xl'>
             {t('frps_server_description')}

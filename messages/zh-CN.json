@@ -1,7 +1,8 @@
 {
     "Homepage": {
         "FRPS_Server_Title": "FRPS 服务器",
-        "frps_server_description": "这是一个内网穿透服务。",
+        "FRPS_Server_Title2": "By @ycxom",
+        "frps_server_description": "一个内网穿透服务器",
         "Go_to_homepage": "访问主页",
         "Learn_More": "Frps项目",
         "Approachable": "易于使用",

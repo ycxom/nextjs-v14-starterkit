@@ -1,7 +1,8 @@
 {
   "Homepage": {
     "FRPS_Server_Title": "FRPSサーバー",
-    "frps_server_description": "これはイントラネット浸透サービスです。",
+    "FRPS_Server_Title2": "By @ycxom",
+    "frps_server_description": "イントラネット浸透サーバー",
     "Go_to_homepage": "ホームページにアクセス",
     "Learn_More": "Frpsプロジェクト",
     "Approachable": "使いやすい",
