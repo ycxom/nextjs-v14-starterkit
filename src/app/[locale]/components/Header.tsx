@@ -1,8 +1,8 @@
 'use client'
 import { Link } from '@/src/navigation'
-import myLogo from '@/src/app/my-logo.png' // 1. 导入您的 logo 图片
+import myLogo from '@/src/app/my-logo.png'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image' // 2. 推荐使用 Next.js 的 Image 组件
+import Image from 'next/image'
 import { FC } from 'react'
 import GithubIcon from '../../icons/github'
 import LangSwitcher from './LangSwitcher'
@@ -13,12 +13,10 @@ interface Props {
 }
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
-  // 添加 'relative' 和 'z-50' 以确保 Header 组件位于顶层
   return (
     <div className='relative z-50 mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
       <Link lang={locale} href='/'>
         <div className='flex flex-row items-center'>
-          {/* 3. 使用 Image 组件和导入的图片对象 */}
           <div className='flex h-14 w-14 items-center justify-center'>
             <Image
               src={myLogo}
@@ -32,7 +30,6 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </Link>
       <div className='flex flex-row items-center gap-3'>
-        {/* 已移除 nav 元素 */}
         <ThemeSwitch />
         <LangSwitcher />
         <a

@@ -8,15 +8,13 @@ import { useEffect } from 'react'
  */
 const DynamicBackground = () => {
     useEffect(() => {
-        // 新的壁纸 API 地址
         const wallpaperUrl = 'https://ai.ycxom.top:3002/api/v1/wallpaper/by-ratio/standard';
 
-        // 应用样式到 body 元素
         document.body.style.backgroundImage = `url(${wallpaperUrl})`;
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundPosition = 'center';
-        document.body.style.backgroundAttachment = 'fixed'; // 使背景在滚动时固定
-        document.body.style.transition = 'background-image 1s ease-in-out'; // 添加平滑过渡效果
+        document.body.style.backgroundAttachment = 'fixed';
+        document.body.style.transition = 'background-image 1s ease-in-out';
 
         // 组件卸载时执行清理函数，移除背景样式
         return () => {
