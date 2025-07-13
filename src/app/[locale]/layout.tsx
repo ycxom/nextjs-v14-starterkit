@@ -7,6 +7,7 @@ import {
 } from 'next-intl'
 import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+import DynamicBackground from './components/DynamicBackground' // 1. 导入新组件
 import { Header } from './components/Header'
 import './globals.css'
 
@@ -43,6 +44,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
+        <DynamicBackground /> {/* 2. 在 body 的顶部使用该组件 */}
         <ThemeProvider
           enableSystem
           attribute='class'

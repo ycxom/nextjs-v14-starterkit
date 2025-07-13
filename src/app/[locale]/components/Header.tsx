@@ -11,8 +11,9 @@ interface Props {
 }
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
+  // 添加 'relative' 和 'z-50' 以确保 Header 组件位于顶层
   return (
-    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
+    <div className='relative z-50 mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
       <Link lang={locale} href='/'>
         <div className='flex flex-row items-center'>
           <div className='mb-2 h-14 w-14'>
@@ -22,13 +23,7 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </Link>
       <div className='flex flex-row items-center gap-3'>
-        <nav className='mr-10 inline-flex gap-5'>
-          <Link lang={locale} href={`/about`}>
-            {t('About')}
-          </Link>
-          <a href=''>{t('Support')}</a>
-          <a href=''>{t('Other')}</a>
-        </nav>
+        {/* 已移除 nav 元素 */}
         <ThemeSwitch />
         <LangSwitcher />
         <a
